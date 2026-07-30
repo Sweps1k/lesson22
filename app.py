@@ -1,7 +1,6 @@
 from flask import Flask
 
 app = Flask(__name__)
-
 # 1
 @app.route('/')
 def home():
@@ -18,7 +17,6 @@ def skills():
 @app.route('/contact')
 def contact():
     return "телеграм для звязку dev_user або пошта mymail@gmail.com"
-
 
 # 2
 @app.route('/temperature/<int:t>')
